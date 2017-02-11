@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ImmutableArrayIterator | MDE Documentation</title>
+	<title>ReportAllCachedHelper | MDE Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,39 +56,25 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_util_immutable_array_.html">&quot;util/immutable/array&quot;</a>
+					<a href="../modules/_model_textmodel_.html">&quot;model/textModel&quot;</a>
 				</li>
 				<li>
-					<a href="_util_immutable_array_.immutablearrayiterator.html">ImmutableArrayIterator</a>
+					<a href="_model_textmodel_.reportallcachedhelper.html">ReportAllCachedHelper</a>
 				</li>
 			</ul>
-			<h1>Class ImmutableArrayIterator&lt;T&gt;</h1>
+			<h1>Class ReportAllCachedHelper</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T</h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ImmutableArrayIterator</span>
+						<span class="target">ReportAllCachedHelper</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -98,20 +84,27 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="_util_immutable_array_.immutablearrayiterator.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_util_immutable_array_.immutablearrayiterator.html#_array" class="tsd-kind-icon">_array</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_util_immutable_array_.immutablearrayiterator.html#_index" class="tsd-kind-icon">_index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#_cached_string" class="tsd-kind-icon">_cached_<wbr>string</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#_contentthunk" class="tsd-kind-icon">_content<wbr>Thunk</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#content" class="tsd-kind-icon">content</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_util_immutable_array_.immutablearrayiterator.html#next" class="tsd-kind-icon">next</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#abandon" class="tsd-kind-icon">abandon</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_model_textmodel_.reportallcachedhelper.html#requrestcontent" class="tsd-kind-icon">requrest<wbr>Content</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,22 +116,34 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Immutable<wbr>Array<wbr>Iterator<span class="tsd-signature-symbol">(</span>_array<span class="tsd-signature-symbol">: </span><a href="_util_immutable_array_.immutablearray.html" class="tsd-signature-type">ImmutableArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_util_immutable_array_.immutablearrayiterator.html" class="tsd-signature-type">ImmutableArrayIterator</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Report<wbr>All<wbr>Cached<wbr>Helper<span class="tsd-signature-symbol">(</span>contentThunk<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_model_textmodel_.reportallcachedhelper.html" class="tsd-signature-type">ReportAllCachedHelper</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/immutable/array.ts#L5">util/immutable/array.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L425">model/textModel.ts:425</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>_array: <a href="_util_immutable_array_.immutablearray.html" class="tsd-signature-type">ImmutableArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>contentThunk: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_util_immutable_array_.immutablearrayiterator.html" class="tsd-signature-type">ImmutableArrayIterator</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_model_textmodel_.reportallcachedhelper.html" class="tsd-signature-type">ReportAllCachedHelper</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,42 +151,94 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="_array" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _array</h3>
-					<div class="tsd-signature tsd-kind-icon">_array<span class="tsd-signature-symbol">:</span> <a href="_util_immutable_array_.immutablearray.html" class="tsd-signature-type">ImmutableArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="_cached_string" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cached_<wbr>string</h3>
+					<div class="tsd-signature tsd-kind-icon">_cached_<wbr>string<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/immutable/array.ts#L4">util/immutable/array.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L425">model/textModel.ts:425</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="_index" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _index</h3>
-					<div class="tsd-signature tsd-kind-icon">_index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="_contentthunk" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _content<wbr>Thunk</h3>
+					<div class="tsd-signature tsd-kind-icon">_content<wbr>Thunk<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/immutable/array.ts#L5">util/immutable/array.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L424">model/textModel.ts:424</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-					<a name="next" class="tsd-anchor"></a>
-					<h3>next</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/immutable/array.ts#L12">util/immutable/array.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L435">model/textModel.ts:435</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="abandon" class="tsd-anchor"></a>
+					<h3>abandon</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">abandon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L442">model/textModel.ts:442</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="requrestcontent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> requrest<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">requrest<wbr>Content<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/textModel.ts#L431">model/textModel.ts:431</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -194,36 +251,57 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_util_immutable_array_.html">"util/immutable/array"</a>
+						<a href="../modules/_model_textmodel_.html">"model/text<wbr>Model"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_util_immutable_array_.immutablearray.html" class="tsd-kind-icon">Immutable<wbr>Array</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="_util_immutable_array_.immutablearrayiterator.html" class="tsd-kind-icon">Immutable<wbr>Array<wbr>Iterator</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_model_textmodel_.reportallcachedhelper.html" class="tsd-kind-icon">Report<wbr>All<wbr>Cached<wbr>Helper</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_util_immutable_array_.immutablearrayiterator.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_model_textmodel_.reportallcachedhelper.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="_util_immutable_array_.immutablearrayiterator.html#_array" class="tsd-kind-icon">_array</a>
+								<a href="_model_textmodel_.reportallcachedhelper.html#_cached_string" class="tsd-kind-icon">_cached_<wbr>string</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="_util_immutable_array_.immutablearrayiterator.html#_index" class="tsd-kind-icon">_index</a>
+								<a href="_model_textmodel_.reportallcachedhelper.html#_contentthunk" class="tsd-kind-icon">_content<wbr>Thunk</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+								<a href="_model_textmodel_.reportallcachedhelper.html#content" class="tsd-kind-icon">content</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_util_immutable_array_.immutablearrayiterator.html#next" class="tsd-kind-icon">next</a>
+								<a href="_model_textmodel_.reportallcachedhelper.html#abandon" class="tsd-kind-icon">abandon</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_model_textmodel_.reportallcachedhelper.html#requrestcontent" class="tsd-kind-icon">requrest<wbr>Content</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_model_textmodel_.texteditevent.html" class="tsd-kind-icon">Text<wbr>Edit<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_model_textmodel_.textmodel.html" class="tsd-kind-icon">Text<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_model_textmodel_.itextdocument.html" class="tsd-kind-icon">IText<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_model_textmodel_.revocableoperationresult.html" class="tsd-kind-icon">Revocable<wbr>Operation<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_model_textmodel_.html#textmodellineiterator" class="tsd-kind-icon">Text<wbr>Model<wbr>Line<wbr>Iterator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_model_textmodel_.html#isendoflinebreaker" class="tsd-kind-icon">is<wbr>End<wbr>OfLine<wbr>Breaker</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
