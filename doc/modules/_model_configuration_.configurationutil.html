@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Configuration | MDE Documentation</title>
+	<title>ConfigurationUtil | MDE Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,19 +56,26 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_controller_configuration_.html">&quot;controller/configuration&quot;</a>
+					<a href="_model_configuration_.html">&quot;model/configuration&quot;</a>
 				</li>
 				<li>
-					<a href="_controller_configuration_.configuration.html">Configuration</a>
+					<a href="_model_configuration_.configurationutil.html">ConfigurationUtil</a>
 				</li>
 			</ul>
-			<h1>Module Configuration</h1>
+			<h1>Module ConfigurationUtil</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>All the IO handle are sync</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -76,18 +83,19 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_controller_configuration_.configuration.configitemnotfounderror.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Not<wbr>Found<wbr>Error</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_controller_configuration_.configuration.configtabnotfounderror.html" class="tsd-kind-icon">Config<wbr>Tab<wbr>Not<wbr>Found<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_model_configuration_.configurationutil.configitemnotfounderror.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Not<wbr>Found<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_model_configuration_.configurationutil.configtabnotfounderror.html" class="tsd-kind-icon">Config<wbr>Tab<wbr>Not<wbr>Found<wbr>Error</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_controller_configuration_.configuration.html#getdefaultpath" class="tsd-kind-icon">get<wbr>Default<wbr>Path</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_controller_configuration_.configuration.html#loadconfigfromdefaultpath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Default<wbr>Path</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_controller_configuration_.configuration.html#loadconfigfrompath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Path</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_controller_configuration_.configuration.html#saveconfigtodefaultpath" class="tsd-kind-icon">save<wbr>Config<wbr>ToDefault<wbr>Path</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_controller_configuration_.configuration.html#saveconfigtopath" class="tsd-kind-icon">save<wbr>Config<wbr>ToPath</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_model_configuration_.configurationutil.html#completelabel" class="tsd-kind-icon">complete<wbr>Label</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_model_configuration_.configurationutil.html#getdefaultpath" class="tsd-kind-icon">get<wbr>Default<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_model_configuration_.configurationutil.html#loadconfigfromdefaultpath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Default<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_model_configuration_.configurationutil.html#loadconfigfrompath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_model_configuration_.configurationutil.html#saveconfigtodefaultpath" class="tsd-kind-icon">save<wbr>Config<wbr>ToDefault<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_model_configuration_.configurationutil.html#saveconfigtopath" class="tsd-kind-icon">save<wbr>Config<wbr>ToPath</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,6 +103,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="completelabel" class="tsd-anchor"></a>
+					<h3>complete<wbr>Label</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">complete<wbr>Label<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_model_configuration_.config.html" class="tsd-signature-type">Config</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L128">model/configuration.ts:128</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/_model_configuration_.config.html" class="tsd-signature-type">Config</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 					<a name="getdefaultpath" class="tsd-anchor"></a>
 					<h3>get<wbr>Default<wbr>Path</h3>
@@ -105,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/configuration.ts#L61">controller/configuration.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L148">model/configuration.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -122,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/configuration.ts#L66">controller/configuration.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L153">model/configuration.ts:153</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -145,7 +176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/configuration.ts#L70">controller/configuration.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L157">model/configuration.ts:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,7 +202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/configuration.ts#L101">controller/configuration.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L194">model/configuration.ts:194</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -194,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/configuration.ts#L105">controller/configuration.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L198">model/configuration.ts:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,10 +250,13 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_controller_configuration_.html">"controller/configuration"</a>
+						<a href="_model_configuration_.html">"model/configuration"</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-external-module">
-								<a href="_controller_configuration_.configuration.html">Configuration</a>
+								<a href="_model_configuration_.configurationutil.html">Configuration<wbr>Util</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="_model_configuration_.validatorgenerator.html">Validator<wbr>Generator</a>
 							</li>
 						</ul>
 					</li>
@@ -231,25 +265,28 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_controller_configuration_.configuration.configitemnotfounderror.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Not<wbr>Found<wbr>Error</a>
+						<a href="../classes/_model_configuration_.configurationutil.configitemnotfounderror.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Not<wbr>Found<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_controller_configuration_.configuration.configtabnotfounderror.html" class="tsd-kind-icon">Config<wbr>Tab<wbr>Not<wbr>Found<wbr>Error</a>
+						<a href="../classes/_model_configuration_.configurationutil.configtabnotfounderror.html" class="tsd-kind-icon">Config<wbr>Tab<wbr>Not<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_model_configuration_.configurationutil.html#completelabel" class="tsd-kind-icon">complete<wbr>Label</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_controller_configuration_.configuration.html#getdefaultpath" class="tsd-kind-icon">get<wbr>Default<wbr>Path</a>
+						<a href="_model_configuration_.configurationutil.html#getdefaultpath" class="tsd-kind-icon">get<wbr>Default<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_controller_configuration_.configuration.html#loadconfigfromdefaultpath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Default<wbr>Path</a>
+						<a href="_model_configuration_.configurationutil.html#loadconfigfromdefaultpath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Default<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_controller_configuration_.configuration.html#loadconfigfrompath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Path</a>
+						<a href="_model_configuration_.configurationutil.html#loadconfigfrompath" class="tsd-kind-icon">load<wbr>Config<wbr>From<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_controller_configuration_.configuration.html#saveconfigtodefaultpath" class="tsd-kind-icon">save<wbr>Config<wbr>ToDefault<wbr>Path</a>
+						<a href="_model_configuration_.configurationutil.html#saveconfigtodefaultpath" class="tsd-kind-icon">save<wbr>Config<wbr>ToDefault<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_controller_configuration_.configuration.html#saveconfigtopath" class="tsd-kind-icon">save<wbr>Config<wbr>ToPath</a>
+						<a href="_model_configuration_.configurationutil.html#saveconfigtopath" class="tsd-kind-icon">save<wbr>Config<wbr>ToPath</a>
 					</li>
 				</ul>
 			</nav>

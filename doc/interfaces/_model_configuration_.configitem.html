@@ -85,10 +85,12 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#labelthunk" class="tsd-kind-icon">label<wbr>Thunk</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#onchanged" class="tsd-kind-icon">on<wbr>Changed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#triggeronstart" class="tsd-kind-icon">trigger<wbr>OnStart</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#validator" class="tsd-kind-icon">validator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#validators" class="tsd-kind-icon">validators</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitem.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
@@ -99,13 +101,38 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="label" class="tsd-anchor"></a>
-					<h3>label</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
 					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L50">model/configuration.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L87">model/configuration.ts:87</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="labelthunk" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label<wbr>Thunk</h3>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Thunk<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L88">model/configuration.ts:88</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="onchanged" class="tsd-anchor"></a>
@@ -113,9 +140,15 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L54">model/configuration.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L103">model/configuration.ts:103</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>trigger when the value is given to the ConfigItem,
+							even if load config from the file.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -144,22 +177,33 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="_model_configuration_.configitemoption.html" class="tsd-signature-type">ConfigItemOption</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L53">model/configuration.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L97">model/configuration.ts:97</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>enable for <strong>Options</strong> and <strong>Combobox</strong></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="triggeronstart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> trigger<wbr>OnStart</h3>
+					<div class="tsd-signature tsd-kind-icon">trigger<wbr>OnStart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L112">model/configuration.ts:112</a></li>
 						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Optional(default: <code>false</code>):
+								If set to true, the handler will trigger <code>OnChanged</code> callback
+							afer loading the config at the start of MDE</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -168,17 +212,17 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_model_configuration_.configitemtype.html" class="tsd-signature-type">ConfigItemType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L51">model/configuration.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L90">model/configuration.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="validator" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> validator</h3>
-					<div class="tsd-signature tsd-kind-icon">validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="_model_configuration_.validator.html" class="tsd-signature-type">Validator</a><span class="tsd-signature-symbol">]</span></div>
+					<a name="validators" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> validators</h3>
+					<div class="tsd-signature tsd-kind-icon">validators<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="_model_configuration_.validator.html" class="tsd-signature-type">Validator</a><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L55">model/configuration.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L105">model/configuration.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/model/configuration.ts#L52">model/configuration.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L92">model/configuration.ts:92</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,6 +246,14 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_model_configuration_.html">"model/configuration"</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/_model_configuration_.configurationutil.html">Configuration<wbr>Util</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/_model_configuration_.validatorgenerator.html">Validator<wbr>Generator</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -225,16 +277,22 @@
 								<a href="_model_configuration_.configitem.html#label" class="tsd-kind-icon">label</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_model_configuration_.configitem.html#labelthunk" class="tsd-kind-icon">label<wbr>Thunk</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_model_configuration_.configitem.html#onchanged" class="tsd-kind-icon">on<wbr>Changed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_model_configuration_.configitem.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_model_configuration_.configitem.html#triggeronstart" class="tsd-kind-icon">trigger<wbr>OnStart</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_model_configuration_.configitem.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_model_configuration_.configitem.html#validator" class="tsd-kind-icon">validator</a>
+								<a href="_model_configuration_.configitem.html#validators" class="tsd-kind-icon">validators</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_model_configuration_.configitem.html#value" class="tsd-kind-icon">value</a>
@@ -243,6 +301,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.configitemoption.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Option</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_model_configuration_.configtab.html" class="tsd-kind-icon">Config<wbr>Tab</a>
 					</li>

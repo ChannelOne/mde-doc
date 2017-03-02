@@ -69,11 +69,20 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<ul>
+							<li>add <code>isDisplay</code> property at v0.1.0</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_util_dom_.domhelper.fixedelement.html" class="tsd-signature-type">FixedElement</a>
+						<a href="_util_domwrapper_.domwrapper.fixedelement.html" class="tsd-signature-type">FixedElement</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">EditorView</span>
@@ -85,7 +94,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_util_dom_.domhelper.idomwrapper.html" class="tsd-signature-type">IDOMWrapper</a></li>
+					<li><a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html" class="tsd-signature-type">IDOMWrapper</a></li>
 					<li><a href="../interfaces/_util_index_.idisposable.html" class="tsd-signature-type">IDisposable</a></li>
 				</ul>
 			</section>
@@ -104,6 +113,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#_document" class="tsd-kind-icon">_document</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_view_vieweditor_.editorview.html#_dom" class="tsd-kind-icon">_dom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#_isdisplay" class="tsd-kind-icon">_is<wbr>Display</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#_model" class="tsd-kind-icon">_model</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#_scrollbar" class="tsd-kind-icon">_scrollbar</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#_toolbar" class="tsd-kind-icon">_toolbar</a></li>
@@ -119,6 +129,7 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#documentview" class="tsd-kind-icon">document<wbr>View</a></li>
 								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#fontfamily" class="tsd-kind-icon">font<wbr>Family</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-overwrite"><a href="_view_vieweditor_.editorview.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#isdisplay" class="tsd-kind-icon">is<wbr>Display</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#left" class="tsd-kind-icon">left</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#margin" class="tsd-kind-icon">margin</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#marginbottom" class="tsd-kind-icon">margin<wbr>Bottom</a></li>
@@ -126,6 +137,7 @@
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#marginright" class="tsd-kind-icon">margin<wbr>Right</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#margintop" class="tsd-kind-icon">margin<wbr>Top</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#right" class="tsd-kind-icon">right</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#showlinenumber" class="tsd-kind-icon">show<wbr>Line<wbr>Number</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_view_vieweditor_.editorview.html#top" class="tsd-kind-icon">top</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-overwrite"><a href="_view_vieweditor_.editorview.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
@@ -157,6 +169,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#snippetorderedlist" class="tsd-kind-icon">snippet<wbr>Ordered<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#snippetunderline" class="tsd-kind-icon">snippet<wbr>Underline</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_view_vieweditor_.editorview.html#snippetunorderedlist" class="tsd-kind-icon">snippet<wbr>Unordered<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#togglelinenumber" class="tsd-kind-icon">toggle<wbr>Line<wbr>Number</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#unbind" class="tsd-kind-icon">unbind</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_view_vieweditor_.editorview.html#undo" class="tsd-kind-icon">undo</a></li>
 							</ul>
@@ -175,9 +188,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_util_dom_.domhelper.fixedelement.html">FixedElement</a>.<a href="_util_dom_.domhelper.fixedelement.html#constructor">constructor</a></p>
+								<p>Overrides <a href="_util_domwrapper_.domwrapper.fixedelement.html">FixedElement</a>.<a href="_util_domwrapper_.domwrapper.fixedelement.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L47">view/viewEditor.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L51">view/viewEditor.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_view_vieweditor_.editorview.html" class="tsd-signature-type">EditorView</a></h4>
@@ -193,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">_document<span class="tsd-signature-symbol">:</span> <a href="_view_viewdocument_.documentview.html" class="tsd-signature-type">DocumentView</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L45">view/viewEditor.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L49">view/viewEditor.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,9 +215,19 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _dom</h3>
 					<div class="tsd-signature tsd-kind-icon">_dom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#_dom">_dom</a></p>
+						<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#_dom">_dom</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L44">util/dom.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L38">util/domWrapper.ts:38</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_isdisplay" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _is<wbr>Display</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Display<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L48">view/viewEditor.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">_model<span class="tsd-signature-symbol">:</span> <a href="_model_textmodel_.textmodel.html" class="tsd-signature-type">TextModel</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L43">view/viewEditor.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L46">view/viewEditor.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">_scrollbar<span class="tsd-signature-symbol">:</span> <a href="_view_viewscrollbar_.scrollbarview.html" class="tsd-signature-type">ScrollBarView</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L46">view/viewEditor.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L50">view/viewEditor.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">_toolbar<span class="tsd-signature-symbol">:</span> <a href="_view_viewtoolbar_.toolbarview.html" class="tsd-signature-type">ToolbarView</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L47">view/viewEditor.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L51">view/viewEditor.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Line<wbr>Margin<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">40</span><span class="tsd-signature-symbol"> =&nbsp;40</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L39">view/viewEditor.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L42">view/viewEditor.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -254,7 +277,7 @@
 					<div class="tsd-signature tsd-kind-icon">Min<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">100</span><span class="tsd-signature-symbol"> =&nbsp;100</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L40">view/viewEditor.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L43">view/viewEditor.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -264,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">Snippet<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/\$\{\d+:\w+\}/g</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L41">view/viewEditor.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L44">view/viewEditor.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,18 +304,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#bottom">bottom</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#bottom">bottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L171">util/dom.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L165">util/domWrapper.ts:165</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#bottom">bottom</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#bottom">bottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L175">util/dom.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L169">util/domWrapper.ts:169</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -315,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L327">view/viewEditor.ts:327</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L341">view/viewEditor.ts:341</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_view_viewdocument_.documentview.html" class="tsd-signature-type">DocumentView</a></h4>
@@ -332,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L354">view/viewEditor.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L368">view/viewEditor.ts:368</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -355,24 +378,56 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_util_dom_.domhelper.resizableelement.html">ResizableElement</a>.<a href="_util_dom_.domhelper.resizableelement.html#height">height</a></p>
+								<p>Overrides <a href="_util_domwrapper_.domwrapper.resizableelement.html">ResizableElement</a>.<a href="_util_domwrapper_.domwrapper.resizableelement.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L350">view/viewEditor.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L364">view/viewEditor.ts:364</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_util_dom_.domhelper.resizableelement.html">ResizableElement</a>.<a href="_util_dom_.domhelper.resizableelement.html#height">height</a></p>
+								<p>Overrides <a href="_util_domwrapper_.domwrapper.resizableelement.html">ResizableElement</a>.<a href="_util_domwrapper_.domwrapper.resizableelement.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L342">view/viewEditor.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L356">view/viewEditor.ts:356</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>h: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="isdisplay" class="tsd-anchor"></a>
+					<h3>is<wbr>Display</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisplay<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> isDisplay<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L372">view/viewEditor.ts:372</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L376">view/viewEditor.ts:376</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -389,18 +444,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#left">left</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#left">left</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L126">util/dom.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L120">util/domWrapper.ts:120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#left">left</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#left">left</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L130">util/dom.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L124">util/domWrapper.ts:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -423,18 +478,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#margin">margin</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#margin">margin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L186">util/dom.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L180">util/domWrapper.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#margin">margin</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#margin">margin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L190">util/dom.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L184">util/domWrapper.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -457,18 +512,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginbottom">marginBottom</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginbottom">marginBottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L246">util/dom.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L240">util/domWrapper.ts:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginbottom">marginBottom</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginbottom">marginBottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L250">util/dom.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L244">util/domWrapper.ts:244</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -491,18 +546,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginleft">marginLeft</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginleft">marginLeft</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L201">util/dom.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L195">util/domWrapper.ts:195</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginleft">marginLeft</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginleft">marginLeft</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L205">util/dom.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L199">util/domWrapper.ts:199</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -525,18 +580,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginright">marginRight</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginright">marginRight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L216">util/dom.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L210">util/domWrapper.ts:210</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#marginright">marginRight</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#marginright">marginRight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L220">util/dom.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L214">util/domWrapper.ts:214</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -559,18 +614,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#margintop">marginTop</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#margintop">marginTop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L231">util/dom.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L225">util/domWrapper.ts:225</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#margintop">marginTop</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#margintop">marginTop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L235">util/dom.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L229">util/domWrapper.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -593,18 +648,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#right">right</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#right">right</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L141">util/dom.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L135">util/domWrapper.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#right">right</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#right">right</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L145">util/dom.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L139">util/domWrapper.ts:139</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -614,6 +669,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="showlinenumber" class="tsd-anchor"></a>
+					<h3>show<wbr>Line<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> showLineNumber<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L337">view/viewEditor.ts:337</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -627,18 +699,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#top">top</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L156">util/dom.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L150">util/domWrapper.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.positionelement.html">PositionElement</a>.<a href="_util_dom_.domhelper.positionelement.html#top">top</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.positionelement.html">PositionElement</a>.<a href="_util_domwrapper_.domwrapper.positionelement.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L160">util/dom.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L154">util/domWrapper.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -661,18 +733,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_util_dom_.domhelper.resizableelement.html">ResizableElement</a>.<a href="_util_dom_.domhelper.resizableelement.html#width">width</a></p>
+								<p>Overrides <a href="_util_domwrapper_.domwrapper.resizableelement.html">ResizableElement</a>.<a href="_util_domwrapper_.domwrapper.resizableelement.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L338">view/viewEditor.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L352">view/viewEditor.ts:352</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_util_dom_.domhelper.resizableelement.html">ResizableElement</a>.<a href="_util_dom_.domhelper.resizableelement.html#width">width</a></p>
+								<p>Overrides <a href="_util_domwrapper_.domwrapper.resizableelement.html">ResizableElement</a>.<a href="_util_domwrapper_.domwrapper.resizableelement.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L331">view/viewEditor.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L345">view/viewEditor.ts:345</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -697,10 +769,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_util_dom_.domhelper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_dom_.domhelper.idomwrapper.html#addeventlistener">addEventListener</a></p>
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#addeventlistener">addEventListener</a></p>
+								<p>Implementation of <a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html#addeventlistener">addEventListener</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#addeventlistener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L62">util/dom.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L56">util/domWrapper.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -728,10 +800,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_util_dom_.domhelper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_dom_.domhelper.idomwrapper.html#appendto">appendTo</a></p>
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#appendto">appendTo</a></p>
+								<p>Implementation of <a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html#appendto">appendTo</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#appendto">appendTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L54">util/dom.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L48">util/domWrapper.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -754,7 +826,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L99">view/viewEditor.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L105">view/viewEditor.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -777,7 +849,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L79">view/viewEditor.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L85">view/viewEditor.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -794,7 +866,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L87">view/viewEditor.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L93">view/viewEditor.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -812,7 +884,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_index_.idisposable.html">IDisposable</a>.<a href="../interfaces/_util_index_.idisposable.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L358">view/viewEditor.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L387">view/viewEditor.ts:387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -828,10 +900,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_util_dom_.domhelper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_dom_.domhelper.idomwrapper.html#element">element</a></p>
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#element">element</a></p>
+								<p>Implementation of <a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html">IDOMWrapper</a>.<a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html#element">element</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#element">element</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L50">util/dom.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L44">util/domWrapper.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
@@ -848,7 +920,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L282">view/viewEditor.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L288">view/viewEditor.ts:288</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_view_index_.buttonoption.html" class="tsd-signature-type">ButtonOption</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -865,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L244">view/viewEditor.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L250">view/viewEditor.ts:250</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -882,7 +954,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L251">view/viewEditor.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L257">view/viewEditor.ts:257</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -899,7 +971,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L257">view/viewEditor.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L263">view/viewEditor.ts:263</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -922,7 +994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L261">view/viewEditor.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L267">view/viewEditor.ts:267</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -945,7 +1017,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L266">view/viewEditor.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L272">view/viewEditor.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -968,7 +1040,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L239">view/viewEditor.ts:239</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L245">view/viewEditor.ts:245</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -990,9 +1062,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#on">on</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L58">util/dom.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L52">util/domWrapper.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1018,7 +1090,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L83">view/viewEditor.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L89">view/viewEditor.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1035,7 +1107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L95">view/viewEditor.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L101">view/viewEditor.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1051,9 +1123,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#remove">remove</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L70">util/dom.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L64">util/domWrapper.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1069,9 +1141,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_util_dom_.domhelper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_dom_.domhelper.appendabledomwrapper.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html">AppendableDomWrapper</a>.<a href="_util_domwrapper_.domwrapper.appendabledomwrapper.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/util/dom.ts#L66">util/dom.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L60">util/domWrapper.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1100,7 +1172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L113">view/viewEditor.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L119">view/viewEditor.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1117,7 +1189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L139">view/viewEditor.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L145">view/viewEditor.ts:145</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1134,7 +1206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L191">view/viewEditor.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L197">view/viewEditor.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1151,7 +1223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L165">view/viewEditor.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L171">view/viewEditor.ts:171</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1168,7 +1240,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L215">view/viewEditor.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L221">view/viewEditor.ts:221</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="togglelinenumber" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Line<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Line<wbr>Number<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L333">view/viewEditor.ts:333</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1185,7 +1274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L108">view/viewEditor.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L114">view/viewEditor.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1202,7 +1291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/viewEditor.ts#L91">view/viewEditor.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/view/viewEditor.ts#L97">view/viewEditor.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1239,6 +1328,9 @@
 								<a href="_view_vieweditor_.editorview.html#_dom" class="tsd-kind-icon">_dom</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_view_vieweditor_.editorview.html#_isdisplay" class="tsd-kind-icon">_is<wbr>Display</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_view_vieweditor_.editorview.html#_model" class="tsd-kind-icon">_model</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -1268,6 +1360,9 @@
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_view_vieweditor_.editorview.html#height" class="tsd-kind-icon">height</a>
 							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_view_vieweditor_.editorview.html#isdisplay" class="tsd-kind-icon">is<wbr>Display</a>
+							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_view_vieweditor_.editorview.html#left" class="tsd-kind-icon">left</a>
 							</li>
@@ -1288,6 +1383,9 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_view_vieweditor_.editorview.html#right" class="tsd-kind-icon">right</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_view_vieweditor_.editorview.html#showlinenumber" class="tsd-kind-icon">show<wbr>Line<wbr>Number</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_view_vieweditor_.editorview.html#top" class="tsd-kind-icon">top</a>
@@ -1366,6 +1464,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_view_vieweditor_.editorview.html#snippetunorderedlist" class="tsd-kind-icon">snippet<wbr>Unordered<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_view_vieweditor_.editorview.html#togglelinenumber" class="tsd-kind-icon">toggle<wbr>Line<wbr>Number</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_view_vieweditor_.editorview.html#unbind" class="tsd-kind-icon">unbind</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ListView | MDE Documentation</title>
+	<title>ConfigItemOption | MDE Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_view_rui_viewlist_.html">&quot;view/rui/viewList&quot;</a>
+					<a href="../modules/_model_configuration_.html">&quot;model/configuration&quot;</a>
 				</li>
 				<li>
-					<a href="_view_rui_viewlist_.listview.html">ListView</a>
+					<a href="_model_configuration_.configitemoption.html">ConfigItemOption</a>
 				</li>
 			</ul>
-			<h1>Class ListView</h1>
+			<h1>Interface ConfigItemOption</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ListView</span>
+						<span class="target">ConfigItemOption</span>
 					</li>
 				</ul>
 			</section>
@@ -82,38 +82,62 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_view_rui_viewlist_.listview.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitemoption.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitemoption.html#labelthunk" class="tsd-kind-icon">label<wbr>Thunk</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_model_configuration_.configitemoption.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>List<wbr>View<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/_view_rui_viewlist_.listviewproperties.html" class="tsd-signature-type">ListViewProperties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_view_rui_viewlist_.listview.html" class="tsd-signature-type">ListView</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/rui/viewList.ts#L7">view/rui/viewList.ts:7</a></li>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="label" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L119">model/configuration.ts:119</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="labelthunk" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label<wbr>Thunk</h3>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Thunk<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L120">model/configuration.ts:120</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>props: <a href="../interfaces/_view_rui_viewlist_.listviewproperties.html" class="tsd-signature-type">ListViewProperties</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_view_rui_viewlist_.listview.html" class="tsd-signature-type">ListView</a></h4>
-						</li>
-					</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/model/configuration.ts#L117">model/configuration.ts:117</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -124,26 +148,61 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_view_rui_viewlist_.html">"view/rui/view<wbr>List"</a>
+						<a href="../modules/_model_configuration_.html">"model/configuration"</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/_model_configuration_.configurationutil.html">Configuration<wbr>Util</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/_model_configuration_.validatorgenerator.html">Validator<wbr>Generator</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_model_configuration_.configitemtype.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_model_configuration_.validatetype.html" class="tsd-kind-icon">Validate<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.config.html" class="tsd-kind-icon">Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.configitem.html" class="tsd-kind-icon">Config<wbr>Item</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_view_rui_viewlist_.listview.html" class="tsd-kind-icon">List<wbr>View</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.configitemoption.html" class="tsd-kind-icon">Config<wbr>Item<wbr>Option</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_view_rui_viewlist_.listview.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_model_configuration_.configitemoption.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_model_configuration_.configitemoption.html#labelthunk" class="tsd-kind-icon">label<wbr>Thunk</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_model_configuration_.configitemoption.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_view_rui_viewlist_.listviewproperties.html" class="tsd-kind-icon">List<wbr>View<wbr>Properties</a>
+						<a href="_model_configuration_.configtab.html" class="tsd-kind-icon">Config<wbr>Tab</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.validateresult.html" class="tsd-kind-icon">Validate<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_model_configuration_.validator.html" class="tsd-kind-icon">Validator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_model_configuration_.html#isvalidateresult" class="tsd-kind-icon">is<wbr>Validate<wbr>Result</a>
 					</li>
 				</ul>
 			</nav>

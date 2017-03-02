@@ -69,6 +69,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The controller load the config from default path,
+							and if any changes ara made, the controller will write the
+						config to the default path.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -100,6 +109,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_buffers" class="tsd-kind-icon">_buffers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_composition_start_pos" class="tsd-kind-icon">_composition_<wbr>start_<wbr>pos</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_composition_update_pos" class="tsd-kind-icon">_composition_<wbr>update_<wbr>pos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_config" class="tsd-kind-icon">_config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_current_buffer" class="tsd-kind-icon">_current_<wbr>buffer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_menu" class="tsd-kind-icon">_menu</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#_position" class="tsd-kind-icon">_position</a></li>
@@ -126,6 +136,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#enablereplacepanel" class="tsd-kind-icon">enable<wbr>Replace<wbr>Panel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#enablesearchpanel" class="tsd-kind-icon">enable<wbr>Search<wbr>Panel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#findlineancestor" class="tsd-kind-icon">find<wbr>Line<wbr>Ancestor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#handleexporthtml" class="tsd-kind-icon">handle<wbr>ExportHTML</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_controller_controller_.mde.html#handlefilereaderror" class="tsd-kind-icon">handle<wbr>File<wbr>Read<wbr>Error</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#handlemenuclick" class="tsd-kind-icon">handle<wbr>Menu<wbr>Click</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#handlenewfile" class="tsd-kind-icon">handle<wbr>New<wbr>File</a></li>
@@ -138,6 +149,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_controller_controller_.mde.html#openfile" class="tsd-kind-icon">open<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#reloadbuffer" class="tsd-kind-icon">reload<wbr>Buffer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#showaboutmessage" class="tsd-kind-icon">show<wbr>About<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_controller_controller_.mde.html#triggeronstart" class="tsd-kind-icon">trigger<wbr>OnStart</a></li>
 							</ul>
 						</section>
 					</div>
@@ -155,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L47">controller/controller.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L54">controller/controller.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_controller_controller_.mde.html" class="tsd-signature-type">MDE</a></h4>
@@ -171,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">_buffer_<wbr>state<span class="tsd-signature-symbol">:</span> <a href="_model_bufferstate_.bufferstate.html" class="tsd-signature-type">BufferState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L40">controller/controller.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L47">controller/controller.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">_buffers<span class="tsd-signature-symbol">:</span> <a href="_model_textmodel_.textmodel.html" class="tsd-signature-type">TextModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L37">controller/controller.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L42">controller/controller.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">_composition_<wbr>start_<wbr>pos<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_model_index_.position.html" class="tsd-signature-type">Position</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L46">controller/controller.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L53">controller/controller.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -201,7 +213,17 @@
 					<div class="tsd-signature tsd-kind-icon">_composition_<wbr>update_<wbr>pos<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_model_index_.position.html" class="tsd-signature-type">Position</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L47">controller/controller.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L54">controller/controller.ts:54</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _config</h3>
+					<div class="tsd-signature tsd-kind-icon">_config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_model_configuration_.config.html" class="tsd-signature-type">Config</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L45">controller/controller.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -211,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">_current_<wbr>buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L38">controller/controller.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L43">controller/controller.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">_menu<span class="tsd-signature-symbol">:</span> <a href="_view_menu_.mainmenuview.html" class="tsd-signature-type">MainMenuView</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L42">controller/controller.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L49">controller/controller.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +253,7 @@
 					<div class="tsd-signature tsd-kind-icon">_position<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_model_index_.position.html" class="tsd-signature-type">Position</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L41">controller/controller.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L48">controller/controller.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +263,7 @@
 					<div class="tsd-signature tsd-kind-icon">_search<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="_controller_searchbox_.searchbox.html" class="tsd-signature-type">SearchBox</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L44">controller/controller.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L51">controller/controller.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">_view<span class="tsd-signature-symbol">:</span> <a href="_view_viewwindow_.windowview.html" class="tsd-signature-type">WindowView</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L43">controller/controller.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L50">controller/controller.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -268,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L493">controller/controller.ts:493</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L538">controller/controller.ts:538</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_model_bufferstate_.bufferstate.html" class="tsd-signature-type">BufferState</a></h4>
@@ -285,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L485">controller/controller.ts:485</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L530">controller/controller.ts:530</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_view_viewdocument_.documentview.html" class="tsd-signature-type">DocumentView</a></h4>
@@ -302,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L481">controller/controller.ts:481</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L526">controller/controller.ts:526</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_view_vieweditor_.editorview.html" class="tsd-signature-type">EditorView</a></h4>
@@ -319,7 +341,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L477">controller/controller.ts:477</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L522">controller/controller.ts:522</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_model_textmodel_.textmodel.html" class="tsd-signature-type">TextModel</a></h4>
@@ -336,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L489">controller/controller.ts:489</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L534">controller/controller.ts:534</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_view_viewwindow_.windowview.html" class="tsd-signature-type">WindowView</a></h4>
@@ -356,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L456">controller/controller.ts:456</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L501">controller/controller.ts:501</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,7 +401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L339">controller/controller.ts:339</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L384">controller/controller.ts:384</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +423,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_index_.idisposable.html">IDisposable</a>.<a href="../interfaces/_util_index_.idisposable.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L468">controller/controller.ts:468</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L513">controller/controller.ts:513</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -418,7 +440,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L143">controller/controller.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L180">controller/controller.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,7 +463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L135">controller/controller.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L172">controller/controller.ts:172</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -464,7 +486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L444">controller/controller.ts:444</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L489">controller/controller.ts:489</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -477,23 +499,40 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="handlefilereaderror" class="tsd-anchor"></a>
-					<h3>handle<wbr>File<wbr>Read<wbr>Error</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>File<wbr>Read<wbr>Error<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IpcRendererEvent</span>, err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="handleexporthtml" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>ExportHTML</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>ExportHTML<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L464">controller/controller.ts:464</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L257">controller/controller.ts:257</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handlefilereaderror" class="tsd-anchor"></a>
+					<h3>handle<wbr>File<wbr>Read<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>File<wbr>Read<wbr>Error<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Electron.IpcRendererEvent</span>, err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ErrnoException</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L509">controller/controller.ts:509</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">IpcRendererEvent</span></h5>
+									<h5>event: <span class="tsd-signature-type">Electron.IpcRendererEvent</span></h5>
 								</li>
 								<li>
 									<h5>err: <span class="tsd-signature-type">ErrnoException</span></h5>
@@ -513,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L154">controller/controller.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L191">controller/controller.ts:191</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -541,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L225">controller/controller.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L270">controller/controller.ts:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -558,7 +597,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L350">controller/controller.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L395">controller/controller.ts:395</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -575,7 +614,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L289">controller/controller.ts:289</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L334">controller/controller.ts:334</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -598,7 +637,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L428">controller/controller.ts:428</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L473">controller/controller.ts:473</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -621,7 +660,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L384">controller/controller.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L429">controller/controller.ts:429</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -644,7 +683,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L242">controller/controller.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L287">controller/controller.ts:287</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -667,7 +706,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L406">controller/controller.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L451">controller/controller.ts:451</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -690,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L460">controller/controller.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L505">controller/controller.ts:505</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -713,7 +752,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L127">controller/controller.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L164">controller/controller.ts:164</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -736,9 +775,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/controller/controller.ts#L217">controller/controller.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L262">controller/controller.ts:262</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="triggeronstart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> trigger<wbr>OnStart</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">trigger<wbr>OnStart<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/controller/controller.ts#L150">controller/controller.ts:150</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Call this method after the class is initialized.</p>
+								</div>
+								<p>If ConfigItem&#39;s <code>triggerOnStart</code> property is true,
+									then trigger the callback, and the <code>oldValue</code>
+								parameter will be set to <code>null</code>.</p>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -777,6 +841,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_controller_controller_.mde.html#_composition_update_pos" class="tsd-kind-icon">_composition_<wbr>update_<wbr>pos</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_controller_controller_.mde.html#_config" class="tsd-kind-icon">_config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_controller_controller_.mde.html#_current_buffer" class="tsd-kind-icon">_current_<wbr>buffer</a>
@@ -826,6 +893,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_controller_controller_.mde.html#findlineancestor" class="tsd-kind-icon">find<wbr>Line<wbr>Ancestor</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_controller_controller_.mde.html#handleexporthtml" class="tsd-kind-icon">handle<wbr>ExportHTML</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_controller_controller_.mde.html#handlefilereaderror" class="tsd-kind-icon">handle<wbr>File<wbr>Read<wbr>Error</a>
 							</li>
@@ -861,6 +931,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_controller_controller_.mde.html#showaboutmessage" class="tsd-kind-icon">show<wbr>About<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_controller_controller_.mde.html#triggeronstart" class="tsd-kind-icon">trigger<wbr>OnStart</a>
 							</li>
 						</ul>
 					</li>

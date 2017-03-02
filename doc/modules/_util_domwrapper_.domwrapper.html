@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ListViewProperties | MDE Documentation</title>
+	<title>DomWrapper | MDE Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,51 +56,83 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_view_rui_viewlist_.html">&quot;view/rui/viewList&quot;</a>
+					<a href="_util_domwrapper_.html">&quot;util/domWrapper&quot;</a>
 				</li>
 				<li>
-					<a href="_view_rui_viewlist_.listviewproperties.html">ListViewProperties</a>
+					<a href="_util_domwrapper_.domwrapper.html">DomWrapper</a>
 				</li>
 			</ul>
-			<h1>Interface ListViewProperties</h1>
+			<h1>Module DomWrapper</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ListViewProperties</span>
-					</li>
-				</ul>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<h2 id="added-at-v0-1-0">Added at v0.1.0</h2>
+					</div>
+					<p>Replace <code>DomHelper</code>, do <strong>not</strong> use <code>DomHelper</code> to generate DOM anymore,
+					use the <em>typescript-domhelper</em> library.</p>
+					<p>The <code>Generic</code> namespace is also abandoned.</p>
+				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_view_rui_viewlist_.listviewproperties.html#source" class="tsd-kind-icon">source</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_util_domwrapper_.domwrapper.absoluteelement.html" class="tsd-kind-icon">Absolute<wbr>Element</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_util_domwrapper_.domwrapper.appendabledomwrapper.html" class="tsd-kind-icon">Appendable<wbr>Dom<wbr>Wrapper</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_util_domwrapper_.domwrapper.fixedelement.html" class="tsd-kind-icon">Fixed<wbr>Element</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-not-exported"><a href="../classes/_util_domwrapper_.domwrapper.positionelement.html" class="tsd-kind-icon">Position<wbr>Element</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/_util_domwrapper_.domwrapper.resizableelement.html" class="tsd-kind-icon">Resizable<wbr>Element</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html" class="tsd-kind-icon">IDOMWrapper</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_util_domwrapper_.domwrapper.ielement.html" class="tsd-kind-icon">IElement</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_util_domwrapper_.domwrapper.html#isidomwrapper" class="tsd-kind-icon">isIDOMWrapper</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="source" class="tsd-anchor"></a>
-					<h3>source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="../classes/_util_observable_collection_.observablecollection.html" class="tsd-signature-type">ObservableCollection</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/c8dcbb5/src/view/rui/viewList.ts#L4">view/rui/viewList.ts:4</a></li>
-						</ul>
-					</aside>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isidomwrapper" class="tsd-anchor"></a>
+					<h3>isIDOMWrapper</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">isIDOMWrapper<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChannelOne/MDE/blob/7a54b43/src/util/domWrapper.ts#L28">util/domWrapper.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -111,27 +143,44 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_view_rui_viewlist_.html">"view/rui/view<wbr>List"</a>
+						<a href="_util_domwrapper_.html">"util/dom<wbr>Wrapper"</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported">
+								<a href="_util_domwrapper_.domhelper.html">Dom<wbr>Helper</a>
+							</li>
+							<li class="current tsd-kind-module tsd-parent-kind-external-module">
+								<a href="_util_domwrapper_.domwrapper.html">Dom<wbr>Wrapper</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_view_rui_viewlist_.listview.html" class="tsd-kind-icon">List<wbr>View</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_util_domwrapper_.domwrapper.absoluteelement.html" class="tsd-kind-icon">Absolute<wbr>Element</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_view_rui_viewlist_.listviewproperties.html" class="tsd-kind-icon">List<wbr>View<wbr>Properties</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_view_rui_viewlist_.listviewproperties.html#source" class="tsd-kind-icon">source</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_util_domwrapper_.domwrapper.appendabledomwrapper.html" class="tsd-kind-icon">Appendable<wbr>Dom<wbr>Wrapper</a>
 					</li>
-				</ul>
-				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_util_domwrapper_.domwrapper.fixedelement.html" class="tsd-kind-icon">Fixed<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../classes/_util_domwrapper_.domwrapper.positionelement.html" class="tsd-kind-icon">Position<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_util_domwrapper_.domwrapper.resizableelement.html" class="tsd-kind-icon">Resizable<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_util_domwrapper_.domwrapper.idomwrapper.html" class="tsd-kind-icon">IDOMWrapper</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_util_domwrapper_.domwrapper.ielement.html" class="tsd-kind-icon">IElement</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_util_domwrapper_.domwrapper.html#isidomwrapper" class="tsd-kind-icon">isIDOMWrapper</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
